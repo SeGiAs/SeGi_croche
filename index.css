@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gochi Hand', cursive;
+}
+body{
+    background-image:url(imagenes/fondo\ \(1\).jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(177, 225, 80);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: absolute;
+    font-size: 45px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100px;
+    height: 100px;
+}
+
+.logo1{
+    margin-top: -90px;
+    margin-bottom: -90px;
+    margin-left: -140px;
+    width: 200px;
+    height: 200px;
+}
+.logo2{
+    margin-top: -15px;
+    position: absolute;
+    width: 100px;
+    height: 120px;
+}
+.navbar a {
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: yellow;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    background-image: url(imagenes/IMG-20230713-WA0018-removebg-preview.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.imagen{
+    margin-left: 590px;
+    margin-top: -380px;
+    position: absolute;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 36px;
+    font-weight: 700;
+    color: yellowgreen;
+}
+.home-content p{
+    font-size: 19px;
+   margin: 20px 0 40px;
+}
+.home-content .btn_box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+/*transicion*/
+.btn_box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: yellowgreen;
+    border: 2px solid yellowgreen;
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn_box a:hover {
+    color: yellowgreen;
+}
+.btn_box a:nth-child(2){
+    background: transparent;
+    color: yellowgreen;
+}
+.btn_box a:nth-child(2):hover{
+color: white;
+}
+.btn_box a:nth-child(2)::before{
+    background: yellowgreen;
+    
+}
+.btn_box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    background: white;
+    z-index: -1;
+    transition: .5s;
+}
+.btn_box a:hover:before{
+width: 100%;
+/*fin transicion*/
+}
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid yellowgreen;
+    border-radius: 50%;
+    font-size: 20px;
+    color: yellowgreen;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover{
+    color: white;
+}
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: yellowgreen;
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover:before{
+    width: 100%;
+}
+.home-imgHover{
+    position: absolute;
+    top: 300;
+    right: 140px;
+    width: 500px;
+    height: 490px;
+    border-radius: 55px;
+    background: transparent;
+    transition: 3s;
+}
+.home-imgHover:hover{
+background-color: white;
+opacity: .8;
+}
